@@ -2,14 +2,16 @@
 
 This repository contains a Python-based application for predicting stock market signals and training AI models using historical stock data. It utilizes machine learning techniques to provide trading signals such as Buy, Sell, and Hold, based on technical indicators.
 
-1. Training Module (stock_trainer.py)
+**1. Training Module (stock_trainer.py)**
+
 Fetches historical stock data from Yahoo Finance.
 Adds technical indicators to the data.
 Trains an AI model using XGBoost for classification of trading signals.
 Provides insights into model performance with an interactive GUI built using Tkinter.
 Exports the trained model to trained_model.pkl for use in the prediction module.
 
-2. Prediction Module (predict_stocks.py)
+**2. Prediction Module (predict_stocks.py)**
+
 Predicts stock market signals using the pre-trained AI model - trained_model.pkl
 Calculates technical indicators like:
 RSI (Relative Strength Index)
@@ -28,15 +30,17 @@ pip install pandas yfinance plotly scikit-learn xgboost joblib openai tkinter
 
 # Usage
 
-1. Training a New Model
+**1. Training a New Model**
+
 Run the stock_trainer.py script to train a new AI model:
 ```bash
 python stock_trainer.py
 ```
 Use the GUI to input a stock ticker and start the training process. The script will fetch data, train the model, and save it to "models/trained_model.pkl"
 
-2. Predicting Stock Signals
-Run the predict_stocks.py script to generate trading signals for predefined tickers:
+**2. Predicting Stock Signals**
+
+First edit the predict_stocks.py and add the ticker that you want to generate a trading signal for into the ticker = ' ' area. Then run predict_stocks.py:
 ```bash
 python predict_stocks.py
 ```
