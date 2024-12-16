@@ -20,7 +20,7 @@ except Exception as e:
     exit(1)  # Exit the program if the model cannot be loaded
 
 # Define the stock tickers
-tickers = ['HPK']
+tickers = ['']
 
 # Fetch the latest stock data
 data = yf.download(tickers, period='1d', interval='1m')  # Adjust as needed
