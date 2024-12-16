@@ -17,10 +17,10 @@ try:
         raise ValueError("Loaded model is None. Please check the model file.")
 except Exception as e:
     print(f"Error loading model: {e}")
-    exit(1)  # Exit the program if the model cannot be loaded
-
+    exit(1)  
+    
 # Define the stock tickers
-tickers = ['']
+tickers = [' ']
 
 # Fetch the latest stock data
 data = yf.download(tickers, period='1d', interval='1m')  # Adjust as needed
