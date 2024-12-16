@@ -15,8 +15,8 @@ import joblib
 # Function to fetch stock data
 def fetch_stock_data():
     stock_symbol = stock_entry.get().strip()
-    time_period = "1y"  # Fixed time period; you can make this dynamic if needed
-
+    time_period = "1y"  
+    
     if not stock_symbol:
         messagebox.showerror("Error", "Please enter a stock ticker!")
         return
